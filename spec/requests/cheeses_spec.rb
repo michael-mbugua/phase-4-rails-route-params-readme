@@ -1,6 +1,4 @@
-require 'rails_helper'
-
-RSpec.describe "Cheeses", type: :request do
+RSpec.describe 'Cheeses', type: :request do
   describe 'GET /cheeses/:id' do
     let!(:cheese) { Cheese.create!(name: "Cheddar", price: 3, is_best_seller: true) }
 
